@@ -1,0 +1,8 @@
+br/com/intelipost/domain/model/UserDetails.class
+br/com/intelipost/domain/model/User.class
+br/com/intelipost/domain/service/UserService.class
+br/com/intelipost/domain/spring/SpringUserDetails.class
+br/com/intelipost/domain/persistence/UserDetailsMapper.class
+br/com/intelipost/domain/persistence/UserMapper.class
+br/com/intelipost/domain/model/Sex.class
+br/com/intelipost/domain/config/DatabaseConfig.class

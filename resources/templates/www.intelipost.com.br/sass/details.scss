@@ -1,0 +1,21 @@
+@import 'inc/shared';
+@import 'inc/header';
+
+main
+{
+	margin: 20px auto;
+	@include border-radius(3px);
+	width: 320px;
+	border: 1px solid;
+	padding: 10px 20px 40px 20px;
+}
+
+table td
+{
+	padding: 0 20px;
+}
+
+#detailsContent
+{
+	display: block;
+}

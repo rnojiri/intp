@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+	<classPathEntry location="/home/rnojiri/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar" />
+
+	<context id="intelipost">
+
+		<jdbcConnection connectionURL="jdbc:mysql://database.intranet:3306/intelipost"
+			driverClass="com.mysql.jdbc.Driver" password="5qu1rck1"
+			userId="root" />
+
+		<javaModelGenerator targetPackage="br.com.intelipost.domain.model"
+			targetProject="domain">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="br.com.intelipost.domain.persistence"
+			targetProject="domain">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="br.com.intelipost.domain.persistence" targetProject="domain">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<table schema="intelipost" 
+			   tableName="User" 
+			   enableSelectByExample="false"
+			   enableDeleteByExample="false" 
+			   enableCountByExample="false"
+			   enableUpdateByExample="false">
+			<property name="useActualColumnNames" value="false"/>
+		</table>
+		
+		<table schema="intelipost" 
+			   tableName="User_Details" 
+			   enableSelectByExample="false"
+			   enableDeleteByExample="false" 
+			   enableCountByExample="false"
+			   enableUpdateByExample="false">
+			<property name="useActualColumnNames" value="false"/>
+		</table>
+
+	</context>
+
+</generatorConfiguration>

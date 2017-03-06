@@ -1,0 +1,53 @@
+h1
+{
+	font-size: 2em;
+	padding: 10px;
+	font-weight: bold;
+}
+
+h1, h3
+{
+	text-align: center;
+}
+
+#wrapper
+{
+	width: 96%;
+	margin: 0 auto;
+}
+
+a:link.nav-link, a:visited.nav-link, a:hover.nav-link, a:active.nav-link
+{
+	text-decoration: underline;
+}
+
+a:link.nav-link, a:visited.nav-link
+{
+	color: $black-color;
+}
+
+a:hover.nav-link, a:active.nav-link
+{
+	color: $light-gray-color;
+}
+
+a.disabled
+{
+	color: $dark-gray-color; 
+	pointer-events: none;
+	text-decoration: line-through;
+}
+
+h2
+{
+	margin-bottom: 10px;
+	font-size: 1.3em;
+}
+
+#logoutButton
+{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	width: 70px;
+}

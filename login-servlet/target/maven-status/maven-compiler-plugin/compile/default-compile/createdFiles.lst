@@ -1,0 +1,5 @@
+br/com/intelipost/controller/LoginController.class
+br/com/intelipost/controller/UserDetailsController.class
+br/com/intelipost/controller/json/UserDetailsJSON.class
+br/com/intelipost/spring/SpringBootWebApplication.class
+br/com/intelipost/spring/WebSecurityConfig.class

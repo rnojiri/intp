@@ -1,0 +1,24 @@
+@import 'inc/shared';
+@import 'inc/header';
+
+.input-item
+{
+	@include border-radius(5px);
+	margin-bottom: 4%;
+}
+
+.submit-button
+{
+	margin-top: 2%;
+	width: 70px;
+	float: right;
+}
+
+main
+{
+	margin: 20px auto;
+	@include border-radius(3px);
+	width: 230px;
+	border: 1px solid;
+	padding: 10px 20px 40px 20px;
+}

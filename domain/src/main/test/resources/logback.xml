@@ -1,0 +1,31 @@
+<!DOCTYPE project>
+<configuration DEBUG="true">
+
+	<settings>
+		<setting name="logImpl" value="STDOUT_LOGGING"/>
+	</settings>
+
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="br.com.intelipost">
+		<level value="DEBUG" />
+		<appender-ref ref="stdout" />
+	</logger>
+	
+	<logger name="java.sql">
+		<level value="DEBUG" />
+        <appender-ref ref="stdout" />
+    </logger>
+	
+	<logger name="org">
+		<level value="TRACE" />
+		<appender-ref ref="stdout" />
+	</logger>
+
+</configuration>

@@ -1,0 +1,46 @@
+# java
+upstream login_servlet	{ server localhost:8080   fail_timeout=5s; }
+
+#########################
+# www.intelipost.com.br #
+#########################
+server 
+{
+	listen localhost:80;
+
+	root /export/htdocs/www.intelipost.com.br;
+
+	server_name www.intelipost.com.br;
+
+	charset utf-8;
+
+	location /css
+	{
+		expires 1h;
+		access_log off;
+		add_header Cache-Control "public";
+	}
+
+	location /js
+	{
+		expires 1h;
+		access_log off;
+		add_header Cache-Control "public";
+	}
+
+	location /api
+	{
+		proxy_pass http://login_servlet;
+		proxy_set_header Host $http_host;
+
+		expires 1h;
+		access_log off;
+		add_header Cache-Control "public";
+	}
+
+	location /
+	{
+		proxy_pass http://login_servlet;
+		proxy_set_header Host $http_host;
+	}
+}

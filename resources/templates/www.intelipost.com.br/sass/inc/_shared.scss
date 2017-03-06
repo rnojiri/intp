@@ -1,0 +1,77 @@
+@import 'reset';
+@import 'definitions';
+
+html, body 
+{
+	background-color: $white-color;
+	font-family: "Open Sans",sans-serif;
+}
+
+body
+{
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	font-size: 1.0em;
+}
+
+input
+{
+	box-sizing: border-box;
+}
+
+.full-width
+{
+	width: 100%;
+}
+
+.middle
+{
+	vertical-align: middle;
+}
+
+a:link, a:visited, .fake-link
+{
+	text-decoration: none;
+}
+
+.fake-link
+{
+	cursor: pointer;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.displaying
+{
+	display: block;
+}
+
+.warning 
+{
+	border: 1px $warning-color solid; 
+}
+
+ul.horizontal-list
+{
+	display: table;
+}
+
+ul.horizontal-list li
+{
+	display: table-cell;
+}
+
+.on-left
+{
+	float: left;
+}
+
+.on-right
+{
+	float: right;
+}
+

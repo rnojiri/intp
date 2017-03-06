@@ -1,0 +1,8 @@
+/home/rnojiri/workspace-prova/intelipost/domain/src/main/java/br/com/intelipost/domain/model/UserDetails.java
+/home/rnojiri/workspace-prova/intelipost/domain/src/main/java/br/com/intelipost/domain/persistence/UserDetailsMapper.java
+/home/rnojiri/workspace-prova/intelipost/domain/src/main/java/br/com/intelipost/domain/model/Sex.java
+/home/rnojiri/workspace-prova/intelipost/domain/src/main/java/br/com/intelipost/domain/spring/SpringUserDetails.java
+/home/rnojiri/workspace-prova/intelipost/domain/src/main/java/br/com/intelipost/domain/service/UserService.java
+/home/rnojiri/workspace-prova/intelipost/domain/src/main/java/br/com/intelipost/domain/model/User.java
+/home/rnojiri/workspace-prova/intelipost/domain/src/main/java/br/com/intelipost/domain/persistence/UserMapper.java
+/home/rnojiri/workspace-prova/intelipost/domain/src/main/java/br/com/intelipost/domain/config/DatabaseConfig.java

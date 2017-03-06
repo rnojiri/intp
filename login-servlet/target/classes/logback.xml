@@ -1,0 +1,35 @@
+<!DOCTYPE project>
+<configuration>
+
+	<appender name="stdout" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>/export/logs/www.intelipost.com.br/main.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>/export/logs/www.intelipost.com.br/main.%d.log.gz</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>[%-5level]%d{"yyyy-MM-dd HH:mm:ss,SSS"} %logger{0}:%line - %msg %n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="ch.qos.logback">
+		<level value="info" />
+		<appender-ref ref="stdout" />
+	</logger>
+	
+	<logger name="br.com.intelipost">
+		<level value="info" />
+		<appender-ref ref="stdout" />
+	</logger>
+	
+	<logger name="org.springframework">
+		<level value="info" />
+		<appender-ref ref="stdout" />
+	</logger>
+	
+	<logger name="org.mybatis">
+		<level value="info" />
+		<appender-ref ref="stdout" />
+	</logger>
+
+</configuration>
